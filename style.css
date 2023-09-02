@@ -1,0 +1,54 @@
+:root {
+    --red: #ff0c00;
+    --blue: #0020ff;
+}
+
+html,
+body {
+    background-color: gray;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    background-color: #222;
+    text-decoration: none;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.profile_pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12.5%;
+    height: auto;
+    border-radius: 50%;
+    image-rendering: pixelated;
+    background-color: blue;
+}
+
+#links a {
+    text-decoration: none;
+
+    &:visited {
+        color: #0000EE;
+    }
+}
