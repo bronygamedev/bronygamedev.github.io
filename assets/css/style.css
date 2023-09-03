@@ -30,8 +30,11 @@ nav a {
     margin: auto;
     width: 50%;
     padding: 10px;
-    text-align: center;
 
+}
+
+.centertext {
+    text-align: center;
 }
 
 .profile_pic {
@@ -46,6 +49,29 @@ nav a {
 }
 
 #links a {
+    text-decoration: none;
+
+    &:visited {
+        color: #0000EE;
+    }
+}
+
+#about h3{
+    margin: 3%;
+}
+
+#projectgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+#projectgrid img {
+    width: 75%;
+}
+
+#projectgrid a {
+    font-size: 150%;
     text-decoration: none;
 
     &:visited {
