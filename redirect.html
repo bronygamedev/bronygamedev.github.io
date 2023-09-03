@@ -41,11 +41,11 @@
         </svg>
         <a onclick='history.back()' target='_blank' href="#" id='external-link'><span id="altText">Click here to visit
                 the page...</span></a>
-                <div>
-                    <a id="link-display" onclick='history.back()' target="_blank" href="#">Link here</a>
-                </div>
+        <div>
+            <a id="link-display" onclick='history.back()' target="_blank" href="#">Link here</a>
+        </div>
+        <p>to stop seeing this allow "bronygamedev.github.io" popup permission</p>
     </div>
-    <h1>to stop seeing this allow "bronygamedev.github.io" popup permission</h1>
 </body>
 
 <script>
@@ -54,18 +54,18 @@
         get: (searchParams, prop) => searchParams.get(prop),
     });
 
-   
+
     //check if link is provided
-    if(!params.to) {
-        if(document.referrer.length) {
+    if (!params.to) {
+        if (document.referrer.length) {
             history.back();
         }
         window.location.href = 'https://bronygamedev.github.io/';
     }
 
     //make link absolute
-    var link = (params.to.startsWith('http'))? params.to : '//'+params.to;
- 
+    var link = (params.to.startsWith('http')) ? params.to : '//' + params.to;
+
     // open defined link in a new tab
     window.open(link, '_blank');
 
