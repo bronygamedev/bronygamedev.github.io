@@ -45,6 +45,7 @@
                     <a id="link-display" onclick='history.back()' target="_blank" href="#">Link here</a>
                 </div>
     </div>
+    <h1>to stop seeing this allow "bronygamedev.github.io" popup permission</h1>
 </body>
 
 <script>
@@ -59,7 +60,7 @@
         if(document.referrer.length) {
             history.back();
         }
-        window.location.href = 'https://github.com/EDDYMENS/markdown-external-link-opener/blob/main/README.md';
+        window.location.href = 'https://bronygamedev.github.io/';
     }
 
     //make link absolute
@@ -70,7 +71,7 @@
 
     // Show user external link incase of popup block
     let browser_active = ((typeof document.hasFocus != 'undefined' ? document.hasFocus() : 1) ? 1 : 0);
-    /*if (browser_active) {
+    if (browser_active) {
         mainPan = document.getElementById('main-pan');
         mainPan.style.display = 'block';
         externalAnchorLink = document.getElementById('external-link');
@@ -80,8 +81,8 @@
         externalLinkDisplay.text = link;
     } else {
         history.back();
-    }*/
-    history.back()
+    }
+
 </script>
 
 </html>
