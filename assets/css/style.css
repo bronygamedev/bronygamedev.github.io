@@ -5,11 +5,13 @@
 
 html,
 body {
-    background-color: gray;
+    background-color: #292929;
     padding: 0px;
     margin: 0px;
 }
-
+p{
+    margin: 0px;
+}
 nav {
     background-color: #222;
     text-decoration: none;
@@ -68,6 +70,7 @@ nav a {
 
 #projectgrid img {
     width: 75%;
+    height: auto;
 }
 
 #projectgrid a {
