@@ -1,123 +1,138 @@
 :root {
-    --red: #ff0c00;
-    --blue: #0020ff;
+	--red: #ff0c00;
+	--blue: #0020ff;
+	color-scheme: dark;
+	accent-color: #898787;
 }
-*{
-	color: white;
+
+* {
+	color: #898787;
 }
+html a:visited,
+html a:visited>*:not(svg) {
+	color: #898787 !important;
+}
+a[ping]:link,
+a[ping]:link > *:not(svg),
+:link:not(cite) {
+  color: #8db2e5 !important;
+}
+
 html,
 body {
-    background-color: #292929;
-    padding: 0px;
-    margin: 0px;
-	color: white;
+	background-color: #292929;
+	padding: 0px;
+	margin: 0px;
+	color: #898787;
 }
-p{
-    margin: 0px;
-	color: white;
+
+p {
+	margin: 0px;
+	color: #898787;
 }
+
 nav {
-    background-color: #222;
-    text-decoration: none;
+	background-color: #222;
+	text-decoration: none;
 }
 
 nav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
 }
 
 .center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
 
 }
 
 .centertext {
-    text-align: center;
+	text-align: center;
 }
 
 .profile_pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 12.5%;
-    height: auto;
-    border-radius: 50%;
-    image-rendering: pixelated;
-    background-color: blue;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 12.5%;
+	height: auto;
+	border-radius: 50%;
+	image-rendering: pixelated;
+	background-color: blue;
 }
 
 #links a {
-    text-decoration: none;
+	text-decoration: none;
 
-    &:visited {
-        color: #0000EE;
-    }
+	&:visited {
+		color: #0000EE;
+	}
 }
 
 #about h3 {
-    margin: 3%;
+	margin: 3%;
 }
 
 #projectgrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, auto);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(1, auto);
 }
 
 #projectgrid img {
-    width: 75%;
-    height: auto;
+	width: 75%;
+	height: auto;
 }
 
 #projectgrid a {
-    font-size: 150%;
-    text-decoration: none;
+	font-size: 150%;
+	text-decoration: none;
 
-    &:visited {
-        color: #0000EE;
-    }
+	&:visited {
+		color: #0000EE;
+	}
 }
 
 .collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
 }
 
 .active,
 .collapsible:hover {
-    background-color: #555;
+	background-color: #555;
 }
 
 .collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
 }
 
 .active:after {
-    content: "\2212";
+	content: "\2212";
 }
 
 .MDfile {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
