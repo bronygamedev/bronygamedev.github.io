@@ -2,7 +2,9 @@
     --red: #ff0c00;
     --blue: #0020ff;
 }
-
+*{
+	color: white;
+}
 html,
 body {
     background-color: #292929;
@@ -12,6 +14,7 @@ body {
 }
 p{
     margin: 0px;
+	color: white;
 }
 nav {
     background-color: #222;
