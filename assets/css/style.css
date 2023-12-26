@@ -10,7 +10,7 @@
 }
 html a:visited,
 html a:visited>*:not(svg) {
-	color: #898787 !important;
+	color: #8db2e5 !important;
 }
 a[ping]:link,
 a[ping]:link > *:not(svg),
